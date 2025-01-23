@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Order Confirmation</h2>
+        <p>Item <strong>{{ item_name }}</strong>!</p>
+        <p>Price: ${{ price }}</p>
+        <button><a href="{{url_for('pay')}}">Pay</button></a> <br>
+        <a href="{{ url_for('dashboard') }}">Go back to homepage</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #030303;
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+    width: 100%;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-size: 14px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #00ff00;
+}
+
+.review-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"], select, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.star {
+    font-size: 32px;
+    cursor: pointer;
+    color: gray;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+}
+
+.rating-description {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+hr {
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 20px 0;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .link:hover {
+    color: green;
+}

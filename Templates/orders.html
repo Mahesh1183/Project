@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/orders.css">
+</head>
+<body>  
+<nav class="navbar navbar-expand-lg bg-secondary">
+    <div class="container-fluid" style="height: 45px;">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search for Products, brands, and more" aria-label="Search" style="width: 675px; border-radius: 0%;" />
+      </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="{{ url_for('homepage') }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M8 3.293l6 6V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.293l6-6z"/>
+              </svg>
+              &nbsp;Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="{{ url_for('contact_us') }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.611-.163l2.387 2.293c.329.316.445.785.317 1.21l-.804 2.71a1.745 1.745 0 0 1-.616.96l-.553.508a11.55 11.55 0 0 0 5.354 5.354l.508-.553c.28-.305.664-.505 1.06-.616l2.71-.804a1.745 1.745 0 0 1 1.21.317l2.293 2.387c.714.743.595 1.913-.163 2.611l-1.291 1.292c-.329.329-.8.457-1.258.346C9.747 14.462 4.879 9.707 1.805 3.544c-.11-.459.017-.93.346-1.258L3.443.674a1.745 1.745 0 0 1 1.291-.163l1.151.263z"/>
+              </svg>
+              &nbsp;Contact Us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="{{ url_for('wishlist') }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path d="M8 1.314C3.562-3.248-7.534 4.735 8 15c15.534-10.265 4.437-18.248 0-13.686z"/>
+              </svg>
+              &nbsp;Favorites
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="{{ url_for('cart') }}">
+              <svg class="V3C5bO" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path>
+              </svg>
+              &nbsp;Cart
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="{{ url_for('orders') }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 0-2 2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2a2 2 0 0 0-2-2zm3 3a3 3 0 0 1-6 0H4v9a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4h-2z"/>
+              </svg>
+              &nbsp;Orders
+            </a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="{{ url_for('logout') }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.5 12a.5.5 0 0 1-.5-.5V9H4a.5.5 0 0 1-.5-.5V7.5a.5.5 0 0 1 .5-.5h6V3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6v3a.5.5 0 0 1-.5.5h-3z"/>
+                    </svg>
+                    &nbsp;Logout
+                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="search-bar">
+        <input type="text" placeholder="Search your orders here">
+        <button>Search Orders</button>
+    </div>
+
+    {% if data %}
+    {% for order in data %}
+    <div class="order-card">
+        <img src="{{ order['image_url'] }}" alt="Product Image">
+        <div class="order-info">
+            <h3>{{ order['item_name'] }}</h3>
+            <p>Order Date: {{ order['order_date'] }}</p>
+        </div>
+        <div class="order-price-rating">
+            <div class="order-price">₹{{ order['price'] }}</div>
+            <a href="/review/{{ order['id'] }}" class="review-link">
+                <span class="star">&#9733;</span> Rate & Review Product
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p>No orders found.</p>
+    {% endif %}
+</div>
+<footer class="footer">
+  <p>&copy; 2025 Rahul's Company. All rights reserved.</p>
+  <ul class="footer-links">
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms of Service</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</footer>
+</body>
+</html>

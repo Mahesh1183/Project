@@ -1,0 +1,79 @@
+.d-flex {
+    padding-top: 2px;
+  }
+  .container-fluid {
+    border-top: 0%;
+  }
+  .nav-link {
+    color: white;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 20px;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+  .footer {
+    background-color: #030303;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color:white;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0; 
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color:green; 
+}
+body {
+  background-image: url('https://img.freepik.com/free-photo/black-friday-composition-five-bags-letters_23-2147709337.jpg?t=st=1735811255~exp=1735814855~hmac=87aa084c602df36dfc70ed3610934eeb7af277d6b5b245644e801719df004a5d&w=2000');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+h2 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}

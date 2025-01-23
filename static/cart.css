@@ -1,0 +1,143 @@
+.d-flex {
+    padding-top: 2px;
+  }
+  .container-fluid {
+    border-top: 0%;
+  }
+  .nav-link {
+    color: white;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 20px;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+  .footer {
+    background-color: #030303;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color:white;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0; 
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color:green; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.col-md-4 {
+  flex: 0 0 32%;
+}
+
+
+.card {
+  width: 320px;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.card-header, .card-footer {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+
+.card-body {
+  flex-grow: 1;
+}
+
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.btn, .anchor {
+  margin-left: 10px;
+}
+
+.col-12 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+}
+button#rzp-button1:hover {
+  background-color: #0056b3;
+}
+body {
+    background-image: url('https://img.freepik.com/free-photo/computer-mouse-paper-bags-blue-background-top-view_169016-43523.jpg?t=st=1735811833~exp=1735815433~hmac=d4b53d16739c5bc60e53e73d34259cca2a77bca9adf74aa7d3b0d81f58481351&w=1800');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
